@@ -24,7 +24,7 @@ void generate_passwords(char *password, int current_length, int max_length, char
         int k = 0;
         for (int j = 0; j < current_length; j++)
         {
-            if (password[j] == '\\' || password[j] == '\"' || password[j] == '`')
+            if (password[j] == '\\' || password[j] == '\"' || password[j] == '`' || password[j] == '$')
             {
                 password_string[k++] = '\\';
                 password_string[k++] = password[j];
